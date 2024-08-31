@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-
+import PropTypes from 'prop-types';
 import styles from './Friend.module.css';
 
 const getStatusClass = isOnline =>
@@ -18,6 +18,12 @@ const Friend = ({ avatar, name, isOnline }) => {
       </p>
     </div>
   );
+};
+
+Friend.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };
 
 export default Friend;
