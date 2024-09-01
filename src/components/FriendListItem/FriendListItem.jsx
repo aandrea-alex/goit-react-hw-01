@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-import styles from './Friend.module.css';
+import styles from './FriendListItem.module.css';
 
 const getStatusClass = isOnline =>
   clsx(styles.status, {

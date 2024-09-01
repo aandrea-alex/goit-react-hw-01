@@ -13,8 +13,8 @@ export const Profile = ({ name, tag, location, image, stats }) => {
         <p className={styles.location}>{location}</p>
       </div>
       <ul className={styles.stats}>
-        {statsData.map(([label, value], index) => (
-          <li key={index}>
+        {statsData.map(([label, value]) => (
+          <li key={`${label}-${value}`}>
             <span className={styles.label}>{label}</span>
             <span className={styles.value}>{value}</span>
           </li>
