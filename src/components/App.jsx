@@ -16,8 +16,8 @@ function App() {
         location={location}
         image={avatar}
         stats={stats}
-      /> 
-      <FriendList friends={friendsData}/>
+      />
+      <FriendList friends={friendsData} />
       <TransactionHistory items={transactions} />
     </React.Fragment>
   );
